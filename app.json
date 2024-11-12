@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "ToDoListAppNew",
+    "scheme": "your-app-scheme",
     "slug": "ToDoListAppNew",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +23,12 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "entryPoint": "./node_modules/expo-router/entry"
   }
 }
