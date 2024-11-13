@@ -14,7 +14,7 @@ function App() {
     setTasks([...tasks, taskText]);
   }
   return (
-    <SafeAreaView style={styles.constainer}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Incredible To-Do List App</Text>
       <ToDoList tasks={tasks} />
       <ToDoForm addTask={addTask} />
